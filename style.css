@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 30px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+  }
+
+  .youtube_player{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .boton_play{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .top_bar{ 
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #15132a;
+    z-index: 1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .top_bar_front{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  .list_other_canals{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  .buttons{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-right: 20px;
+    justify-content: right;
+  }
+
+ .max-window:hover img{
+  content: url("img/max-white.svg");
+ }
+
+ .min_window:hover img{
+  content: url("img/min-white.svg");
+ }
+
+ .menu_window:hover img{
+  content: url("img/menu-white.svg");
+ }
+
+ .cerrar_window:hover img{
+  content: url("img/cerrar-white.svg");
+ }
+
+ .hidden-element{
+  display: none;
+ }
+ 
+ .youtube-channels{
+  position: absolute;
+  width: 212px;
+  padding-top: 10px;
+  /* height: 287px; */
+  top: 65px;
+  background-color: #15132a;
+  z-index: 4;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: -212px;
+  transition: left 0.5s ease;
+ }
+
+ .list-youtube-channels{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .element-list-youtube-channels{
+  display: flex;
+  color: aliceblue;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+ }
+
+ .element-list-youtube-channels img{
+  width: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+
+
+ }
+
+ .element-list-youtube-channels p:hover {
+  color: #8946cf;
+
+ }
+
+
+ 

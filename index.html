@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Control de Reproductor de YouTube</title>
+</head>
+<body onload="autoPlayVideo()">
+
+  <!-- Agrega el iframe con el video de YouTube -->
+  <div class="top_bar"></div>
+  <div class="top_bar_front">
+    <div class="list_other_canals">
+      <li class="menu_window">
+        <img id="menu_window" src="img\menu.svg" alt="">
+      </li>
+    </div>
+    <div class="buttons">
+      <ul>
+        <li class="max-window">
+          <img id="max"  alt="" srcset="img/max.svg">
+        </li>
+        <li class="min_window">
+          <img id="min" src="img\min.svg" alt="">
+        </li>
+        <li class="cerrar_window">
+          <img id="cerrar" src="img\cerrar.svg" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="youtube-channels">
+    <ul class="list-youtube-channels ">
+    </ul>
+  </div>
+  <iframe id="youtubePlayer" class="youtube_player" src="https://www.youtube.com/embed/4xDzrJKXOOY?si=ajAfJLmGoahxPGgB&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                       
+  <button class="boton_play"   onclick="startVideo()">Iniciar Reproducción</button>
+
+  <!-- Carga la API de YouTube de manera asíncrona -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
+
