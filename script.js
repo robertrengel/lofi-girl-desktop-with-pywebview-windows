@@ -8,9 +8,11 @@ var listYoutubeChannels = document.querySelector('.list-youtube-channels')
 var iframeYoutube = document.getElementById('youtubePlayer')
 
 channels = {
-    lofi_boy: ['lofi Boy','4xDzrJKXOOY?si=ajAfJLmGoahxPGgB',"img/lofi-boy-1.jpg"],
+    lofi_boy: ['lofi Boy','4xDzrJKXOOY?si=ajAfJLmGoahxPGgB',"img/lofi-boy-1.jpeg"],
     lofi_girl: ['lofi Girl','jfKfPfyJRdk?si=jFqcJjCsOQvFq5uIB',"img/lofi-girl-1.jpeg"],
-    lofi_girl_sleep: ['lofi Girl Sleep','rUxyKA_-grg?si=Y1RC8xgncGvCjqcC', "img/lofi-girl-3.jpeg"]
+    lofi_girl_sleep: ['lofi Girl Sleep','rUxyKA_-grg?si=Y1RC8xgncGvCjqcC', "img/lofi-girl-3.jpeg"],
+    lofi_girl_piano: ['lofi Girl Piano','vMxYL4Cj85Y?si=IuFK-2xdieHj--0c', "img/lofi-girl-3.jpeg"],
+    lofi_boy_dark: ['lofi boy dark','S_MOd40zlYU?si=paos2rVLaKt-VhFL', "img/lofi-boy-2.jpeg"]
 }
 
 link_channels = 'https://www.youtube.com/embed/'

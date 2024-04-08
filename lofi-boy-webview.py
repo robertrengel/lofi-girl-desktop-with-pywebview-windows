@@ -22,4 +22,4 @@ class Api:
 if __name__ == '__main__':
     api = Api()
     webview.create_window("YouTube Video", "index.html",js_api=api, width=700,height=425, frameless= True)#, js_api=webview.Api(console_message))# width=800, height=600)
-    webview.start(debug=True)
+    webview.start(debug=False)
